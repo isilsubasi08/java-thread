@@ -14,6 +14,12 @@ public class Birinci implements Runnable {
             System.out.println("İleri x:"+sayi);
             sayi++;
 
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
         }
     }
 }
